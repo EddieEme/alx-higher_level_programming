@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 import string
+i = 0
 for i in string.ascii_lowercase:
-    print(i, end='')
+    print("%s" % i, end='')
