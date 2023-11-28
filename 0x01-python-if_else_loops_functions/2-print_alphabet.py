@@ -2,4 +2,4 @@
 import string
 i = 0
 for i in string.ascii_lowercase:
-    print(f"{i}", end='')
+    print("{}".format(i), end='')
