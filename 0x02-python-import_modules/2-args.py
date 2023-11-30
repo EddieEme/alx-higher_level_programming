@@ -12,7 +12,7 @@ if count == 0:
 elif count == 1:
     print("{} arguments:".format(count))
 else:
-    print("{}: {}".format(i, arg[i]))
+    print("{} arguments:".format(count))
 
 for i in range(1, len(arg)):
     print("{}: {}".format(i, arg[i]))
