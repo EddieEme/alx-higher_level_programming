@@ -5,7 +5,7 @@ if __name__ == "__main__":
 
 arg = sys.argv
 
-count = f"{len(arg) - 1}"
+count = len(arg) - 1
 
 if count == 0:
     print("{} arguments".format(count))
@@ -13,4 +13,3 @@ else:
     print("{} arguments".format(count))
     for i in range(1, len(arg)):
         print("{}: {}".format(i, arg[i]))
-
