@@ -9,7 +9,10 @@ count = len(arg) - 1
 
 if count == 0:
     print("{} arguments.".format(count))
-else:
+elif count == 1:
     print("{} arguments:".format(count))
-    for i in range(1, len(arg)):
-        print("{}: {}".format(i, arg[i]))
+else:
+    print("{}: {}".format(i, arg[i]))
+
+for i in range(1, len(arg)):
+    print("{}: {}".format(i, arg[i]))
