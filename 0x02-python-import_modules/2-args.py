@@ -10,7 +10,7 @@ count = len(arg) - 1
 if count == 0:
     print("{} arguments.".format(count))
 elif count == 1:
-    print("{} arguments:".format(count))
+    print("{} argument:".format(count))
 else:
     print("{} arguments:".format(count))
 
