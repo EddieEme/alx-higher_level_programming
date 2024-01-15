@@ -113,5 +113,3 @@ class Rectangle(Base):
             elif index == 4:
                 self.y = arg
             index += 1
-
-                
