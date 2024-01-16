@@ -104,7 +104,10 @@ class Rectangle(Base):
             index = 0
             for arg in args:
                 if index == 0:
-                    self.id = arg
+                    if arg is None:
+                        self.__init.__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = arg
                 elif index == 1:
                     self.width = arg
                 elif index == 2:
@@ -118,7 +121,10 @@ class Rectangle(Base):
         elif kwargs and len(kwargs) != 0:
             for key, value in kwargs.items():
                 if key == "id":
-                    self.id = value
+                    if value is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = value
                 elif key == "width":
                     self.width = value
                 elif key == "height":
