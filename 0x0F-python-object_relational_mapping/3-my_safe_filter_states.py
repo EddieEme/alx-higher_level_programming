@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 import MySQLdb as db
 from sys import argv
 
