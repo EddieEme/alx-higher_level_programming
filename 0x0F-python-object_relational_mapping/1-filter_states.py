@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     db_cursor.execute(
         "SELECT * FROM states WHERE name LIKE BINARY 'N%' \
-                ORDER BY states.id ASC")
+                ORDER BY id ASC")
 
     rows_selected = db_cursor.fetchall()
 
